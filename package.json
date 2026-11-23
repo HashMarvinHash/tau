@@ -9,15 +9,16 @@
   },
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "test": "turbo run test",
-    "lint": "turbo run lint",
-    "format": "turbo run format",
-    "check-types": "turbo run check-types",
-    "create": "bunx dion-create",
-    "build-index": "bunx dion-build-index",
-    "dev": "turbo run build && bunx dion-build-index && bunx serve .index"
-  },
+		"build": "turbo run build",
+		"test": "turbo run test",
+		"lint": "turbo run lint",
+		"format": "turbo run format",
+		"check-types": "turbo run check-types",
+		"create": "bunx dion-create",
+		"build-index": "bunx dion-build-index",
+		"dev": "turbo run build && bunx dion-build-index && bunx serve .index",
+		"build-site": "dion-build-index && dion-build-site"
+	},
   "devDependencies": {
     "turbo": "2.11.13",
     "typescript": "catalog:",

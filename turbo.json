@@ -1,0 +1,32 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "stream",
+  "tasks": {
+    "build": {
+      "inputs": ["src/**/*.ts", "package.json"],
+      "dependsOn": ["^build", "lint"],
+      "outputs": [".dist/**", "dist/**"]
+    },
+    "test": {
+      "dependsOn": ["build"],
+      "inputs": ["src/**/*", "package.json"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+	"format": {
+      "dependsOn": ["^format"]
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "pushdev": {
+      "dependsOn": ["build"],
+      "cache": false
+    },
+    "push": {
+      "dependsOn": ["build"],
+      "cache": false
+    }
+  }
+}

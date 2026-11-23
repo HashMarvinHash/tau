@@ -1,0 +1,75 @@
+{
+	"name": "audiobooks4soul",
+	"version": "1.1.0",
+	"description": "Free audiobooks from Audiobooks4Soul.com",
+	"icon": "https://4soul.b-cdn.net/wp-content/uploads/2015/11/cropped-audiobook_Icon-favicon1-300x300.png",
+	"keywords": [
+		"audiobooks",
+		"dion",
+		"audio"
+	],
+	"desc": "Stream free audiobooks from Audiobooks4Soul.com across every genre.",
+	"api_version": "*",
+	"lang": [
+		"en"
+	],
+	"nsfw": false,
+	"url": "https://audiobooks4soul.com",
+	"extension_type": [
+		{
+			"type": "EntryProvider",
+			"has_search": true
+		},
+		{
+			"type": "URLHandler",
+			"url_patterns": [
+				"https://audiobooks4soul.com/*"
+			]
+		}
+	],
+	"permissions": [
+		{
+			"type": "Network",
+			"domains": [
+				"audiobooks4soul.com",
+				"4soul.b-cdn.net",
+				"storage01.ezaudiobooks.com"
+			]
+		}
+	],
+	"media_type": [
+		"Audio"
+	],
+	"authors": [
+		"Zed"
+	],
+	"tags": [
+		"audiobooks",
+		"audio"
+	],
+	"license": "MIT",
+	"id": "05732a18-91a3-4d8b-95aa-148e9277ff17",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"test": "bun test",
+		"lint": "bunx biome check",
+		"format": "bunx biome format --write",
+		"build": "bunx dion-bundle",
+		"check-types": "bunx tsc --noEmit"
+	},
+	"dependencies": {
+		"@dion-js/runtime-lib": "catalog:"
+	},
+	"devDependencies": {
+		"@types/bun": "catalog:",
+		"@biomejs/biome": "catalog:",
+		"@dion-js/runtime": "catalog:",
+		"@dion-js/runtime-types": "catalog:",
+		"@dion-js/extension-types": "catalog:",
+		"@dion-js/config": "catalog:",
+		"@dion-js/extension-scripts": "catalog:",
+		"@dion-js/extension-test-utils": "catalog:",
+		"typescript": "catalog:"
+	}
+}

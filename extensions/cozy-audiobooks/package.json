@@ -1,0 +1,71 @@
+{
+	"name": "cozy-audiobooks",
+	"version": "1.3.0",
+	"description": "Free audiobooks from CozyAudiobooks.com",
+	"icon": "https://cozyaudiobooks.com/wp-content/themes/cozy-audiobooks/img/cozy-site-icon.svg?v=1.4.8",
+	"keywords": [
+		"audiobooks",
+		"dion",
+		"audio"
+	],
+	"desc": "Stream free audiobooks from CozyAudiobooks.com across every genre.",
+	"api_version": "*",
+	"lang": [
+		"en"
+	],
+	"nsfw": true,
+	"url": "https://cozyaudiobooks.com",
+	"extension_type": [],
+	"permissions": [
+		{
+			"type": "Network",
+			"domains": [
+				"cozyaudiobooks.com",
+				"vforumas.lt",
+				"ipaudio7.com",
+				"cdn2.penguin.com.au",
+				"fullaudiobooks.com",
+				"i.gr-assets.com",
+				"i.imgur.com",
+				"images-na.ssl-images-amazon.com",
+				"m.media-amazon.com"
+			]
+		}
+	],
+	"media_type": [
+		"Audio"
+	],
+	"authors": [
+		"Zed"
+	],
+	"tags": [
+		"audiobooks",
+		"audio"
+	],
+	"license": "MIT",
+	"id": "21ca3ef1-aaf6-4ef9-84ee-c2b95f6d21be",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"test": "bun test",
+		"lint": "bunx biome check",
+		"format": "bunx biome format --write",
+		"build": "bunx dion-bundle",
+		"check-types": "bunx tsc --noEmit"
+	},
+	"dependencies": {
+		"@dion-js/runtime-lib": "catalog:",
+		"valibot": "catalog:"
+	},
+	"devDependencies": {
+		"@types/bun": "catalog:",
+		"@biomejs/biome": "catalog:",
+		"@dion-js/runtime": "catalog:",
+		"@dion-js/runtime-types": "catalog:",
+		"@dion-js/extension-types": "catalog:",
+		"@dion-js/config": "catalog:",
+		"@dion-js/extension-scripts": "catalog:",
+		"@dion-js/extension-test-utils": "catalog:",
+		"typescript": "catalog:"
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"name": "pawchive",
+	"version": "1.2.0",
+	"description": "Browse archived creator posts from Pawchive.pw",
+	"icon": "https://pawchive.pw/static/logo.png",
+	"keywords": [
+		"pawchive",
+		"archive",
+		"creators",
+		"dion"
+	],
+	"desc": "Browse and read archived creator posts from Pawchive.pw. Creators become entries and their posts become episodes with text and attached images.",
+	"api_version": "*",
+	"lang": [
+		"en"
+	],
+	"nsfw": true,
+	"url": "https://pawchive.pw",
+	"extension_type": [],
+	"permissions": [
+		{
+			"type": "Network",
+			"domains": [
+				"pawchive.pw",
+				"img.pawchive.pw"
+			]
+		}
+	],
+	"media_type": [
+		"Unknown"
+	],
+	"authors": [
+		"Zed"
+	],
+	"tags": [
+		"archive",
+		"creators",
+		"posts"
+	],
+	"license": "MIT",
+	"id": "8c2f4a91-6b3d-4e9c-bd47-3f1a9c5e7d02",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"test": "bun test",
+		"lint": "bunx biome check",
+		"format": "bunx biome format --write",
+		"build": "bunx dion-bundle",
+		"check-types": "bunx tsc --noEmit"
+	},
+	"dependencies": {
+		"@dion-js/runtime-lib": "catalog:",
+		"valibot": "catalog:"
+	},
+	"devDependencies": {
+		"@types/bun": "catalog:",
+		"@biomejs/biome": "catalog:",
+		"@dion-js/runtime": "catalog:",
+		"@dion-js/runtime-types": "catalog:",
+		"@dion-js/extension-types": "catalog:",
+		"@dion-js/config": "catalog:",
+		"@dion-js/extension-scripts": "catalog:",
+		"@dion-js/extension-test-utils": "catalog:",
+		"typescript": "catalog:"
+	}
+}

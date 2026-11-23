@@ -1,0 +1,70 @@
+{
+	"name": "wetried-tls",
+	"version": "1.1.0",
+	"description": "Browse and read free web novels from We Tried TLS",
+	"icon": "https://wetriedtls.com/icon.png?icon.8c0badbc.png",
+	"keywords": [
+		"novel",
+		"translation",
+		"book"
+	],
+	"desc": "Browse and read the free (non-premium) web novels from wetriedtls.com. Premium chapters are not available.",
+	"api_version": "*",
+	"lang": [
+		"en"
+	],
+	"nsfw": false,
+	"url": "https://wetriedtls.com",
+	"extension_type": [
+		{
+			"type": "EntryProvider",
+			"has_search": true
+		}
+	],
+	"media_type": [
+		"Book"
+	],
+	"authors": [
+		"Zed"
+	],
+	"tags": [
+		"novel",
+		"translation",
+		"book"
+	],
+	"license": "MIT",
+	"id": "5b546faa-ae1d-429d-93ce-a00cc11555a3",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"test": "bun test",
+		"lint": "bunx biome check",
+		"format": "biome format --write",
+		"build": "dion-bundle",
+		"check-types": "tsc --noEmit"
+	},
+	"permissions": [
+		{
+			"type": "Network",
+			"domains": [
+				"api.wetriedtls.com",
+				"media.reaperscans.net"
+			]
+		}
+	],
+	"dependencies": {
+		"@dion-js/runtime-lib": "catalog:",
+		"valibot": "catalog:"
+	},
+	"devDependencies": {
+		"@types/bun": "catalog:",
+		"@biomejs/biome": "catalog:",
+		"@dion-js/runtime": "catalog:",
+		"@dion-js/runtime-types": "catalog:",
+		"@dion-js/extension-types": "catalog:",
+		"@dion-js/config": "catalog:",
+		"@dion-js/extension-scripts": "catalog:",
+		"@dion-js/extension-test-utils": "catalog:",
+		"typescript": "catalog:"
+	}
+}

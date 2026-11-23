@@ -1,5 +1,5 @@
-## Dion Media Extensions Monorepo
-This repository contains the extension monorepo for [dion](https://github.com/bldng1337/dion). Click [here](dion://repo/add?url=https%3A%2F%2Fgithub.com%2FHashMarvinHash%2Ftau%2Freleases%2Fdownload%2Fextensions%2Findex.repo.json) to add the extensions to the app, and click [here](https://HashMarvinHash.github.io/tau/) to browse the extensions in your browser.
+## TAU Media Extensions
+This repository contains extensions for [dion](https://github.com/bldng1337/dion). Click [here](dion://repo/add?url=https%3A%2F%2Fgithub.com%2FHashMarvinHash%2Ftau%2Freleases%2Fdownload%2Fextensions%2Findex.repo.json) to add the extensions to the app, and click [here](https://HashMarvinHash.github.io/tau/) to browse the extensions in your browser.
 
 ### Prerequisites
 - Bun. Install from `https://bun.sh`.
@@ -9,7 +9,7 @@ Build and test the extensions:
 ```bash
 # Clone the repo
 git clone https://github.com/HashMarvinHash/tau.git
-cd dion-extensions
+cd tau
 
 # Install dependencies
 bun i
